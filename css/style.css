@@ -1,8 +1,28 @@
 p {
   font-family: "Merriweather";
-
 }
 
 h1, h2 {
   font-family: "Lato";
+}
+
+body {
+  margin: 0px;
+}
+
+article {
+width: 700px;
+  margin: 0 auto;
+
+  /*width: 700px
+
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;*/
+}
+
+img {
+  width: 100%;
+  height: auto
+
 }
