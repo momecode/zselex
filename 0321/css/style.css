@@ -1,0 +1,44 @@
+
+
+h1 {
+  background-color:yellow;
+  color: red;
+
+}
+
+.big{
+  font-size: 120%
+}
+span.big{
+  color: green;
+}
+
+#elsope{
+  font-weight: bold;
+}
+#nagyonbig{
+  font-size: 200%;
+}
+
+
+p#nagyonbig.big{
+  text-decoration: line-through;
+}
+
+#i{
+  letter-spacing: 10px;
+}
+
+.c.c.c.c.c.c.c.c.c.c.c{
+  letter-spacing:50px;
+}
+
+/*hover*/
+
+li {
+  background: pink;
+}
+
+li:hover {
+background:green;
+}
