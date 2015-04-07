@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="utf-8" />
+				<link rel="stylesheet" href="css/reset.min.css">
+				<link rel="stylesheet" href="css/style.css">
+		</head>
+		<body>
+				<div class="wrapper">
+					<h1>Profil</h1>
+					<form method="post" enctype="multipart/form-data">
+							<fieldset>
+								<legend>Személyes adatok</legend>
+
+								<div>
+									<label for="name-inp">Név <span>*</span></label>
+									<input type="text" id="name-inp" name="name" value="Ez az alap" required />
+								</div>
+
+								<div class="half">
+									<label for="birthyear-inp">Születési éved</label>
+									<input type="text" id="birthyear-inp" name="birthyear" placeholder="pl. 1984" maxlength="4" pattern="\d{4}" />
+								</div>
+
+								<div class="half gender">
+									<label>Nemed</label>
+									<label for="gender-inp-w">
+										<input type="radio" id="gender-inp-w" value="w" name="gender" />
+										nő
+									</label>
+									<label for="gender-inp-m">
+										<input type="radio" id="gender-inp-m" value="m" name="gender" />
+										férfi
+									</label>
+								</div>
+
+								<div>
+									<label>Milyen márkákat szeretsz?</label>
+									<div class="checklist">
+										<div class="half">
+											<label for="brand-1">
+												<input type="checkbox" id="brand-1" name="brand[]" value="adidas">
+												Adidas
+											</label>
+											<label for="brand-2">
+												<input type="checkbox" id="brand-2" name="brand[]" value="nike">
+												Nike
+											</label>
+											<label for="brand-3">
+												<input type="checkbox" id="brand-3" name="brand[]" value="apple">
+												Apple
+											</label>
+											<label for="brand-4">
+												<input type="checkbox" id="brand-4" name="brand[]" value="fubu">
+												Fubu
+											</label>
+											<label for="brand-5">
+												<input type="checkbox" id="brand-5" name="brand[]" value="soproni">
+												Soproni
+											</label>
+											<label for="brand-6">
+												<input type="checkbox" id="brand-6" name="brand[]" value="mazda">
+												Mazda
+											</label>
+										</div>
+										<div class="half">
+											<label for="brand-7">
+												<input type="checkbox" id="brand-7" name="brand[]" value="adidas">
+												Adidas
+											</label>
+											<label for="brand-8">
+												<input type="checkbox" id="brand-8" name="brand[]" value="nike">
+												Nike
+											</label>
+											<label for="brand-9">
+												<input type="checkbox" id="brand-9" name="brand[]" value="apple">
+												Apple
+											</label>
+											<label for="brand-10">
+												<input type="checkbox" id="brand-10" name="brand[]" value="fubu">
+												Fubu
+											</label>
+											<label for="brand-11">
+												<input type="checkbox" id="brand-11" name="brand[]" value="soproni">
+												Soproni
+											</label>
+											<label for="brand-12">
+												<input type="checkbox" id="brand-12" name="brand[]" value="mazda">
+												Mazda
+											</label>
+										</div>
+									</div>
+									<small>Többet is kiválaszthatsz!</small>
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>Kapcsolat</legend>
+								<div>
+									<label for="phone-inp">Telefonszám <span>*</span></label>
+									<input type="tel" id="phone-inp" name="phone" placeholder="+36 -- --- ----" required />
+								</div>
+								<div>
+									<label for="email-inp">E-mail cím <span>*</span></label>
+									<input type="email" id="email-inp" name="email" placeholder="nev@domain.hu" required />
+								</div>
+								<div>
+									<label for="fb-inp">Facebook profilod</label>
+									<input type="text" id="fb-inp" name="fb" placeholder="http://facebook.com" />
+								</div>
+								<div>
+									<label for="tw-inp">Twitter profilod</label>
+									<input type="text" id="tw-inp" name="tw" placeholder="http://twitter.com" />
+								</div>
+								<div>
+									<label for="hometype-inp">Milyen házban laksz?</label>
+									<select id="hometype-inp" name="hometype">
+										<option disabled selected>Válassz típust!</option>
+										<option value="1">Családi ház</option>
+										<option value="2">Panel</option>
+										<option value="3">Társasház</option>
+										<option value="4">Kastély</option>
+										<option value="5">Villa</option>
+										<option value="6">Sajnos nincs</option>
+										<option value="7">Egyéb</option>
+									</select>
+								</div>
+							</fieldset>
+							<fieldset class="wide">
+								<div>
+									<label for="bio-inp">Bemutatkozás <span>*</span></label>
+									<textarea id="bio-inp" name="bio" maxlength="600" placeholder="Írj magadról pár mondatot!" required></textarea>
+								</div>
+								<div>
+									<label for="cv-inp">CV feltöltése</label>
+									<input type="file" id="cv-inp" name="cv" accept=".docx,.doc,.pdf,.xls" />
+								</div>
+							</fieldset>
+							<fieldset class="wide">
+								<div>
+									<input type="hidden" name="agreement" value="0" />
+									<input type="checkbox" name="agreement" id="agreement-inp" value="1" />
+									<label for="agreement-inp">
+										Elfogadom a <a href="#">felhasználási feltételeket</a> <span>*</span>
+									</label>
+								</div>
+							</fieldset>
+							<fieldset class="wide">
+								<div>
+									<input type="submit" value="Mentés" name="save" />
+								</div>
+								<div>
+									<input type="reset" value="Űrlap törlése" />
+								</div>
+							</fieldset>
+					</form>
+				</div>
+		</body>
+</html>

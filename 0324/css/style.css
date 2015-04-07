@@ -1,0 +1,62 @@
+/*div{
+  background: yellow;
+  border-color: red;
+  border-style: solid;
+  border-width: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+}*/
+
+span{
+  background: yellow;
+  display:block;
+  margin:5px;
+}
+
+ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+li{
+  background: orange;
+  margin: 5px;
+  display: inline;
+}
+
+li.titkos{
+  /*display:none;*/
+  visibility:hidden;
+}
+
+.kulso{
+  background:purple;
+  /*padding:5px 10px 15px 20px;*/
+  padding:5px 10px 15px;/*t rl b*/
+  padding:5px 10px; /*t rl b*/
+  /*font-family: verdana
+  font-size: 20;
+  font-style: italic;
+  font-weight: bold;
+  line-font-weight: 2;*/
+
+  font: italic bold 20px/2 verdana;
+/*
+  background-color:#000;
+  background-image: url(kep.jpg);
+  background-repeat: no-repeat;
+  background position: left top;
+  background-attachment: fixed;*/
+
+  /*background: tbd*/
+
+
+
+}
+
+.belso{
+  background: pink;
+}

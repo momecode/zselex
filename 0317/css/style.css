@@ -1,9 +1,77 @@
+
+@font-face {
+    font-family: 'montserrat';
+    src: url(../webfont/Montserrat-Bold-webfont.eot');
+    src: url(../webfont/Montserrat-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfont/Montserrat-Bold-webfont.woff2') format('woff2'),
+         url('../webfont/Montserrat-Bold-webfont.woff') format('woff'),
+         url('../webfont/Montserrat-Bold-webfont.ttf') format('truetype'),
+         url('../webfont/Montserrat-Bold-webfont.svg#montserratbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../webfont/Montserrat-Hairline-webfont.eot');
+    src: url('../webfont/Montserrat-Hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfont/Montserrat-Hairline-webfont.woff2') format('woff2'),
+         url('../webfont/Montserrat-Hairline-webfont.woff') format('woff'),
+         url('../webfont/Montserrat-Hairline-webfont.ttf') format('truetype'),
+         url('../webfont/Montserrat-Hairline-webfont.svg#montserrathairline') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../webfont/Montserrat-Light-webfont.eot');
+    src: url('../webfont/Montserrat-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfont/Montserrat-Light-webfont.woff2') format('woff2'),
+         url('../webfont/Montserrat-Light-webfont.woff') format('woff'),
+         url('../webfont/Montserrat-Light-webfont.ttf') format('truetype'),
+         url('../webfont/Montserrat-Light-webfont.svg#montserratlight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../webfont/Montserrat-Regular-webfont.eot');
+    src: url('../webfont/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfont/Montserrat-Regular-webfont.woff2') format('woff2'),
+         url('../webfont/Montserrat-Regular-webfont.woff') format('woff'),
+         url('../webfont/Montserrat-Regular-webfont.ttf') format('truetype'),
+         url('../webfont/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
-  background-image: url(../images/back_01.png);
-  background-color: #dcd6cd;
+  /*background-image: url(../images/back_01.png);*/
+
   background-size: cover;
-  background repeat:n no-repeat;
-  color: #4a4261#
+  color: #4a4261;
+  font-family: montserrat;
+  background: #3c3056; /* Old browsers */
+  background: url("../images/haromszog.png") , -moz-linear-gradient(top,  #3c3056 0%, #76586d 47%, #dcd6cd 100%); /* FF3.6+ */
+  background: url("../images/haromszog.png") , -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3c3056), color-stop(47%,#76586d), color-stop(100%,#dcd6cd)); /* Chrome,Safari4+ */
+  background: url("../images/haromszog.png") , -webkit-linear-gradient(top,  #3c3056 0%,#76586d 47%,#dcd6cd 100%); /* Chrome10+,Safari5.1+ */
+  background: url("../images/haromszog.png") , -o-linear-gradient(top,  #3c3056 0%,#76586d 47%,#dcd6cd 100%); /* Opera 11.10+ */
+  background: url("../images/haromszog.png") , -ms-linear-gradient(top,  #3c3056 0%,#76586d 47%,#dcd6cd 100%); /* IE10+ */
+  background: url("../images/haromszog.png") ,url("../images/haromszog.png") , url("../images/haromszog.png") , linear-gradient(to bottom,  #3c3056 0%,#76586d 47%,#dcd6cd 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3056', endColorstr='#dcd6cd',GradientType=0 ); /* IE6-9 */
+  background-size: 600px 600px, 300px 200px, 100px 100px, 100% 1000px;
+  /*több background calc*/
+  background-repeat:no-repeat, repeat-x, repeat-x, no-repeat;
+  background-position: calc(100% - 20px) 0, 0 350px, 0 430px, 0 0;
+  background-color: #dcd6cd;
+
 }
 
 h1 {
@@ -14,4 +82,142 @@ h1 {
   background-size: cover;
   text-indent: 110%;
   white-space: nowrap;
+}
+
+img{
+
+}
+
+.haromszog {
+  position: absolute;
+  left: 50%;
+  width: 209px;
+  height: 236px;
+  margin-left: -104px;
+  margin-top: -400px;
+
+}
+
+h2{
+  /*clear: both;*/
+}
+
+.h2{
+  width: 83px;
+  height: 93px;
+  margin-left: -490px;
+}
+
+.h3{
+  width: 83px;
+  height: 93px;
+  margin-left: 386px;
+}
+
+
+.thumbnail-list,
+.thumbnail-list-ketto {
+  width: 980px;
+  margin: 0 auto 40px;
+}
+
+.thumbnail-list:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.thumbnail-list li {
+
+  display: block;
+  float: left;
+  margin: 10px;
+
+
+}
+
+.thumbnail-list li:nth-child(4n+1
+){
+  clear: left;
+  margin-left: 0px;
+}
+
+.thumbnail-list li:nth-child(4n){
+  margin-right: 0px;
+
+}
+
+.thumbnail-list-ketto {
+  font-size: 0px;
+  width: 1000px;
+
+}
+
+.thumbnail-list-ketto li{
+  display:inline-block;
+  vertical-align:top;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.thumbnail-list-ketto li img{
+  display: block;
+}
+
+button{
+  text-transform: uppercase;
+  background-color: #2b1c84;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-style: monserrat;
+  width: 230px;
+  height: 50px;
+  padding: 0px;
+  margin: auto;
+  display: block;
+  line-height: -85px;
+  position: relative;
+  box-shadow: inset 10px 20px red;
+}
+
+button:hover{
+  background: #2d1247;
+  box-shadow: 1px 1px 1px 1px grey; x y blur
+
+}
+
+
+button:after{
+
+  content: "";
+  display:block;
+  width:0;
+  height: 0;
+  border-width: 12px 8px 0px;
+  border-style: solid;
+  border-color:  #2b1c84 transparent transparent;
+
+  position: absolute;
+  top:0;
+  left: 50%;
+  margin-left: -8px;
+
+}
+
+button:hover:after{
+  border-color:  #2d1247 transparent transparent;
+
+
+  top: 100%;
+}
+
+li:after{
+  content: attr(valamimas);
+
+}
+
+
+a:after{
+  content: " | " attr(href) " | ";
 }
