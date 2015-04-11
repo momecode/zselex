@@ -1,0 +1,155 @@
+.box{
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
+  background-color: rgba(52, 152, 219, 0.9);
+  color: white;
+  /*opacity: 0.9;*/
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  margin: 10% auto 0 auto;
+  padding: 10px 100px 100px 100px;
+}
+
+.input{
+  width: 100%;
+  height: 50px;
+
+}
+
+input[type=password]{
+  background-image: url("../images/pass.png");
+  background-size: 30 30;
+  background-repeat: no-repeat;
+  background-position: 5% 40%;
+}
+
+input[type=text]{
+  background-image: url("../images/name.png");
+  background-size: 30 30;
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+}
+
+legend{
+  display: block;
+  font-size: 42px;
+  margin: 30px auto 40px auto;
+}
+
+input {
+  border: solid 0px black;
+  box-sizing: border-box;
+  margin: 5px 0 30px 0;
+  background-color: #f39c12;
+  opacity: 0.9;
+  padding-left: 55px;
+  color: white;
+  font-size: 20px;
+}
+
+.labeltext,
+.labelpass {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+input[type=checkbox], input[type=radio] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+input[type=radio] {
+    bottom: 2px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus{
+  background-color: #c48417;
+}
+
+
+.checkboxlabel{
+  margin: 10px 70px;
+  padding-top: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.checkboxlabel p{
+  line-height: 2;
+  display: inline;
+  margin-left: 5px;
+}
+
+.check{
+  width: 35px;
+  height: 35px;
+  margin: 0 7px 0 0;
+  padding-bottom: 5px;
+  float: left;
+  opacity : 0;
+
+}
+
+
+
+body{
+  background-image: url("../images/back.png"), url("http://lorempixel.com/g/1920/1080");
+  background-size: 3 3, 1920 1080;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 4px 0px #733a09;
+  -moz-box-shadow: 0px 4px 0px #733a09;
+  box-shadow: 0px 4px 0px #733a09;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #d35400;
+  padding: 11px 40px 9px 40px;
+  text-decoration: none;
+  width: 100%;
+  height: 50px;
+
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #873400;
+  text-decoration: none;
+}
+
+
+
+.fake{
+  float: left;
+  width: 35px;
+  height: 35px;
+  background-color: #67b5e9;
+  margin: -1px -40px;
+  transition: background .5s ease;
+  position: absolute,
+  ;
+
+
+}
+
+input:checked + .fake:before {
+  content: url(../images/check.png);
+
+}
+
+input:checked + .fake {
+
+  background-color: rgba(255, 0, 0, 0.0);
+
+}
