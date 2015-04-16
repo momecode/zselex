@@ -1,3 +1,17 @@
+/*WEBFONT*/
+@font-face{
+	font-family: 'socialico-webfont';
+	src: url('../font/socialico-webfont.eot');
+	src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../font/socialico-webfont.woff') format('woff'),
+	     url('../font/Wsocialico-webfont.ttf') format('truetype'),
+	     url('../font/socialico-webfont.svg#webfont') format('svg');
+}
+
+/*LAYOUT*/
+
+
+
 body{
   font-family: arial;
   background-color: #E4E4E4;
@@ -64,7 +78,7 @@ header{
 }
 
 
-.menu li:last-child {
+.utolso:last-child {
   border-right: solid 1px gray;
 
   }
@@ -73,6 +87,38 @@ header{
     background-color: white;
     color: black
   }
+
+.menu .social a{
+  font-family: socialico-webfont;
+  font-size: 40px;
+  display: block;
+  float: left;
+  line-height: 1.1;
+  color: black;
+  text-align:right;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.menu .social a:last-child{
+ margin-right: -5px;
+ padding-right: 0px;
+}
+
+
+.menu .social{
+  width: 648px;
+  padding-left: 490px;
+}
+
+
+
+.menu .social a:hover{
+  color: #667A9D;
+  background-color: #AAAAAA;
+}
+
+
 
 /*MAIN*/
 
@@ -120,13 +166,23 @@ aside{
 }
 
 article{
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+  border-bottom: solid 1px #E9EBF4;
+  padding-bottom: 20px;
 }
 
 .subtitle{
   margin: 5px 0 20px 0;
   color: #667A9D;
 }
+
+.subtitle a{
+  text-decoration: none;
+}
+.subtitle a:hover{
+  color: black;
+}
+
 
 date{
   color: #898989;
@@ -143,17 +199,42 @@ date{
 
 .footer li{
   display: inline-block;
-  width: 150px;
-  margin-right: 340px;
-  background-color: red;
-  line-height: 1.5;
-  padding: 10px;
   box-sizing: border-box;
+  width: 130px;
+  margin-right: 360px;
+  margin-top: 20px;
+  line-height: 1.1;
+  /*width:101px;
+  height:25px,*/
+  background-color:#ECECEC;
+  color: #767676;
+  border-radius:3px;
+  text-align: center;
 }
+
+.footer a{
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #767676;
+  display: block;
+  width: 130px;
+  padding: 10px 20px;
+}
+
+.footer a:hover{
+  background-color:#E3E5EF;
+  color: black;
+}
+
 
 .footer li:last-child{
   margin-right: 0;
 }
+
+.kov,
+.elozo{
+}
+
 
 .komment{
   width: 131px;
@@ -168,10 +249,9 @@ date{
   background-repeat: no-repeat;
   background-position: 5px 7px;
   color: #667A9D;
-
-
-
 }
+
+
 
 
 /*ASIDE*/
