@@ -5,7 +5,9 @@ var sebessegek = [0.5, 0.3, 0.7];
 
 var kezdoertekek = [];
 for (var i = 0; i < haromszogek.length; i++ ){
+  //ebben a körben ez a háromszögünk
   var haromszog = haromszogek [i];
+  //a haromszogunk top/left/bottom/right/width/height értékei
   var informaciok = haromszog.getBoundingClientRect();
   kezdoertekek[i] = informaciok.top;
 }
